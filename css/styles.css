@@ -29,6 +29,10 @@ body {
 
   outline: 1px solid tomato;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list {
   list-style: none;
   margin: 0;
@@ -63,9 +67,13 @@ p {
 /* global end*/
 
 /* header */
+.header {
+  border-bottom: 1px solid var(--header-line-color);
+}
 .header-container {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .nav {
   display: flex;
@@ -149,6 +157,9 @@ p {
 }
 .hero-container {
   text-align: center;
+  height: 600px;
+  padding-top: 187px;
+  padding-bottom: 200px;
 }
 .main-title {
   margin-bottom: 30px;
@@ -210,7 +221,11 @@ p {
 .benefits-text {
   line-height: 1.71;
 }
+
 /* Чим ми займаємося */
+.activities-heading {
+  margin-bottom: 50px;
+}
 .activities-heading,
 .team-heading {
   font-weight: 700;
@@ -219,12 +234,39 @@ p {
   text-align: center;
   color: var(--header-color);
 }
+.activities-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Наша команда */
 .team {
   background-color: var(--accent-background-color);
 }
+.team-heading {
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+}
+.team-item {
+  background-color: var(--main-background-color);
+  width: 270px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-img {
+  display: block;
+  margin-bottom: 30px;
+}
 .team-headline {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
